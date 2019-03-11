@@ -1,5 +1,5 @@
 /*
- * Main driver for arcadessdfghj
+ * Main driver for arcades
  */
 public class GameDriver {
 
