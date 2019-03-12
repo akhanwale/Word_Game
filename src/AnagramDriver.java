@@ -2,7 +2,7 @@ import java.awt.event.*;
 /*
  * Driver for the Anagram. 
  */
-public class AnagramDriver {
+public class AnagramDriver extends GameDriver {
 
 	// GUI code 
 	

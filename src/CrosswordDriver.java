@@ -1,6 +1,6 @@
 /*
  * Driver for  the crossword class
  */
-public class CrosswordDriver {
+public class CrosswordDriver extends GameDriver {
 
 }
