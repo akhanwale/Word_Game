@@ -12,4 +12,7 @@ public class AnagramDriver {
 		
 	}
 	
+	// check for whether or not a word fits one in the dictionary
+	
+	
 }
