@@ -9,13 +9,29 @@ public class CrosswordDriver extends GameDriver {
 		visibleBoard = new Tile[solutionBoard.length][solutionBoard[0].length];
 		for(int i = 0; i < solutionBoard.length; i++) {
 			for(int j = 0; j < solutionBoard[0].length; j++) {
+				Tile t = new Tile();
+				t.setYcoord(i);
+				t.setXcoord(j);
+				
 				if(solutionBoard[i][j] == 'x') {
-					
+					t.setBlack(true);
+				}else {
+					t.setBlack(false);
+					t.settLetter(solutionBoard[i][j]);
 				}
 			}
 		}
 	}
 	
+	public static void isSolved(Tile t) {
+		if(t.isRight) {
+			return;
+		}else {
+		if(t.getLetter() == t.gettLetter()) {
+			t.setRight(true);
+		}
+		}
+	}
 	
 	
 }

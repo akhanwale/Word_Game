@@ -2,12 +2,16 @@
  * This is the class with tiles, for each individual game
  */
 public class Tile {
+	boolean isRight = false;
+	boolean isBlack = false;
 	private char tLetter;
 	private char letter;
 	private int ycoord;
 	private int xcoord;
 
-
+	public Tile() {
+		
+	}
 	//wordHunt
 	public Tile(char CChar, int row, int column) {
 		letter = CChar;
@@ -52,5 +56,18 @@ public class Tile {
 	public void setXcoord(int xcoord) {
 		this.xcoord = xcoord;
 	}
+	public boolean isBlack() {
+		return isBlack;
+	}
+	public void setBlack(boolean isBlack) {
+		this.isBlack = isBlack;
+	}
+	public boolean isRight() {
+		return isRight;
+	}
+	public void setRight(boolean isRight) {
+		this.isRight = isRight;
+	}
+	
 }
 
