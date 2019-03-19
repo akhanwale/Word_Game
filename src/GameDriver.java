@@ -11,7 +11,7 @@ public class GameDriver extends JPanel implements ActionListener, MouseListener,
 	
 	
 	
-	static HashMap<String, String> dictionary = new HashMap<String, String>();
+	static HashMap<Integer, String> dictionary = new HashMap<Integer, String>();
 	public GameDriver() {
 		
 	}
@@ -21,13 +21,14 @@ public class GameDriver extends JPanel implements ActionListener, MouseListener,
 	}
 	public static void dictScan() {
 		File dict = new File("Game_Dictionary");
-		
+		int i = 0; 
 		try {
 			Scanner dictionaryScan = dictionaryScan = new Scanner(dict);
 			while(dictionaryScan.hasNext()) {
 			String word = dictionaryScan.next().trim();
 				
-				dictionary.put(word,word);
+				dictionary.put(i,word);
+				i++;
 			}
 			dictionaryScan.close();
 			
